@@ -1,0 +1,142 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        .content {
+            color: #fff;
+            background-color: #cccccc;
+            padding: 20px;
+            font-family: 'Montserrat';
+            font-size: calc(1vw + 1em);
+        }
+
+        .element {
+            padding: 10px;
+        }
+
+        .flex {
+            box-sizing: border-box;
+            display: flex;
+
+        }
+
+        .row {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .col {
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            flex: 1 100%;
+        }
+
+        .structure {
+            min-height: 360px;
+
+        }
+
+        .structure-1 {
+            flex: 1 1 56%;
+        }
+
+        .a {
+            flex: 1 1 40%;
+        }
+
+        .b {
+            flex: 1 1 60%;
+        }
+
+        .structure-1-2-1 {
+            flex: 1 1 10%;
+        }
+
+        .c,
+        .d {
+            flex: 1 1 50%;
+        }
+
+        .e {
+            flex: 1 1 60%;
+        }
+
+        .structure-2 {
+            flex: 1 1 44%;
+        }
+
+        .f,
+        .structure-2-2 {
+            flex: 1 1 50%;
+        }
+
+        .g {
+            flex: 1 1 75%;
+        }
+
+        .h {
+            flex: 1 1 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex row structure">
+            <div class="flex row structure-1">
+                <div class="flex element a">
+                    <div class="content">
+                        A
+                    </div>
+                </div>
+                <div class="flex element b">
+                    <div class="content">
+                        B
+                    </div>
+                </div>
+                <div class="flex col structure-1-2-1">
+                    <div class="flex element c">
+                        <div class="content">
+                            C
+                        </div>
+                    </div>
+                    <div class="flex element d">
+                        <div class="content">
+                            D
+                        </div>
+                    </div>
+                </div>
+                <div class="flex element e">
+                    <div class="content">
+                        E
+                    </div>
+                </div>
+            </div>
+            <div class="flex row structure-2">
+                <div class="flex element f">
+                    <div class="content">
+                        F
+                    </div>
+                </div>
+                <div class="flex col structure-2-2">
+                    <div class="flex element g">
+                        <div class="content">
+                            G
+                        </div>
+                    </div>
+                    <div class="flex element h">
+                        <div class="content">
+                            H
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

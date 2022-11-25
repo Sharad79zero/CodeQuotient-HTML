@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        /* The flex-grow property proportionally stretches
+        flex items, the flex-shrink property can be used
+        to specify which elements will shrink and in what
+        proportions.
+
+        This is because the default value of
+        flex-shrink is 1.
+
+        However, flex items do not grow
+        unless the flex-grow property is declared because
+        the default value of flex-grow is 0. */
+
+        div {
+            border: 2px solid black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        /* Bas neeche wala code hi dala aur green tick aa gya*/
+        div.main {
+            flex-shrink: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h1>Left Sidebar</h1>
+        </div>
+        <div class="main">
+            <h1>Main content here!</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

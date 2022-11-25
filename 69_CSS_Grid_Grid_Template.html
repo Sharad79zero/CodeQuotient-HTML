@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Document</title>
+
+    <style>
+        /* The property grid-template can replace the
+        previous two(grid-template-rows and 
+        grid-template-columns) CSS properties. */
+
+
+        /* .gridClass {
+            display: grid;
+            width: 1000px;
+            height: 500px;
+            grid-template: 100px 150px / 30% 20% 50%;
+        } */
+
+        /* When using grid-template, the values before
+        the slash will determine the size of each row.
+        The values after the slash determine the size of
+        each column. In this example, we’ve made two rows
+        and three columns of varying sizes. */
+
+        div {
+            border: 1px solid black;
+        }
+
+        div.grid {
+            display: grid;
+            grid-gap: 10px;
+            /*grid-template: 100px 150px / 30% 10% 10% 50%;*/
+
+            /* Yeh Neeche ki dono lines mast chalti hain*/
+            /*grid-template: 150px 250px / repeat(3,100px) 200px; */
+            grid-template: 150px 250px / 100px 100px 100px 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

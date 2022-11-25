@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        /* The repeat() function was created specifically for CSS Grid. */
+
+        .gridClass {
+            display: grid;
+            width: 300px;
+            grid-template-columns: repeat(3, 100px);
+        }
+
+        /* using the repeat function will make the grid have three
+           columns that are each 100 pixels wide. It is the same as: */
+
+        .gridClass {
+            display: grid;
+            width: 300px;
+            grid-template-columns: 100px 100px 100px;
+        }
+
+        /* Repeat is particularly useful with fr. For example, repeat(5, 1fr)
+        would split your table into five equal rows or columns. Finally,
+        the second parameter of repeat() can have multiple values. */
+
+        .gridClass {
+            display: grid;
+            width: 300px;
+            grid-template-columns: repeat(2, 20px 50px);
+        }
+
+        /* This code will create four columns where the first and 
+        third columns will be 20 pixels wide and the second and fourth
+        will be 50 pixels wide. */
+        div {
+            border: 1px solid black;
+        }
+
+        div.grid {
+            display: grid;
+            grid-gap: 10px;
+            /* grid-template-columns: 50px 100px 100px 100px; */
+            grid-template-columns: repeat(1,50px) repeat(3,100px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+</body>
+
+</html>

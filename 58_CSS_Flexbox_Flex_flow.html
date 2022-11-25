@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Document</title>
+
+    <style>
+        /*     
+        .container {
+            flex-flow: column wrap;
+        }
+
+        Flex-flow is a shorthand for the flex-direction
+        and flex-wrap properties, which together define
+        the flex container’s main and cross axes. 
+        
+        The default value is row nowrap. the first value in
+        the flex-flow declaration is a flex-direction 
+        value and the second is a flex-wrap value.  */
+
+        div {
+            margin: 5px;
+            border: 2px solid black;
+        }
+
+        .container {
+            background-color: yellow;
+            display: flex;
+            /* Bas yeh neeche waali line add ki ha iss code me*/
+            flex-flow: row wrap;
+        }
+
+        .container div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+</body>
+
+</html>

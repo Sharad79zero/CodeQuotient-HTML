@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Document</title>
+
+    <style>
+        /* .gridClass {
+            display: grid;
+            width: 1000px;
+            height: 500px;
+            grid-template-columns: 100px 200px;
+            grid-template-rows: 10% 20% 600px;
+        } */
+
+        /* This grid has two columns and three rows. grid-template-rows
+        defines the number of rows and sets each row’s height. In this
+        example, the first row is 50 pixels tall (10% of 500), the second
+        row is 100 pixels tall (20% of 500), and the third row is 600 pixels tall. */
+
+        div {
+            border: 1px solid black;
+        }
+
+        div.grid {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 75px 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Document</title>
+
+    <style>
+        /* The main axis and cross axis are interchangeable.
+        We can switch them using the flex-direction property.
+        If we add the flex-direction property and give it a value
+        of column, the flex items will be ordered vertically, not
+        horizontally.
+
+        The flex-direction property can accept four values:
+
+        1.) row — elements will be positioned from left to 
+            right across the parent element starting from 
+            the top left corner (default).
+
+        2.) row-reverse — elements will be positioned from
+            right to left across the parent element starting 
+            from the top right corner.
+
+        3.) column — elements will be positioned from top 
+            to bottom of the parent element starting from the 
+            top left corner.
+
+        4.) column-reverse — elements will be positioned from
+            the bottom to the top of the parent element starting
+            from the bottom left corner. */
+
+        div {
+            margin: 5px;
+            border: 2px solid black;
+        }
+
+        .container {
+            background-color: yellow;
+            display: flex;
+            height: 300px;
+        }
+
+        .container div {
+            height: 50px;
+            width: 100px;
+            background-color: red;
+        }
+
+        div.container {
+            flex-direction: column;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+
+</html>

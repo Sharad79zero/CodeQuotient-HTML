@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Document</title>
+
+    <style>
+        /* This property will set the starting and ending
+        positions for both the rows and columns of an item. */
+
+        /* .gridItem {
+            grid-area: 2 / 3 / 4 / span 5;
+        } */
+
+        /* grid-area takes four values separated by slashes.
+        The order is important! This is how grid-area will
+        interpret those values.
+
+        grid-row-start
+        grid-column-start
+        grid-row-end
+        grid-column-end
+
+        In the above example, the item will occupy rows 
+        two and three and columns three through eight.
+
+        Using grid-area is an easy way to place items 
+        exactly where you want them in a grid. */
+
+        div {
+            border: 1px solid black;
+        }
+
+        div.grid {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto auto auto;
+        }
+
+        #item-1 {
+            grid-area: 2 / 2 / span 3/ span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div id="item-1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

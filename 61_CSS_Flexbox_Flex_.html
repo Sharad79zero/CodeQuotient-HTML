@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        /* 
+        The flex property provides a convenient way
+        for specifying how elements stretch and shrink,
+        while simplifying the CSS required.
+        
+        The flex property allows you to declare flex-grow, 
+        flex-shrink, and flex-basis all in one line.
+        
+        .flexAttr {
+            flex: 2 1 150px;
+        } 
+
+        Is same as :
+
+        .flexAttr {
+            flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: 150px;
+        }
+        
+        */
+        div {
+            border: 2px solid black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            flex: 0 0 100px;
+        }
+
+        .main {
+            flex: 1 1 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Left Sidebar</h1>
+        </div>
+        <div class="main">
+            <h1>Main content here!</h1>
+        </div>
+    </div>
+</body>
+
+</html>

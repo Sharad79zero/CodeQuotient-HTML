@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>This is the title of the Web Page</title>
+</head>
+
+<body>
+    <h1 style="font-family:sans-serif;">College Admission Form</h1>
+    <form id="college-admission-form">
+
+        <label for="name">Name</label>
+        <input id="name"><br><br>
+        <hr>
+        
+            <label for="email">Email</label>
+            <input id="email" type="email" required><br><br>
+            <label for="phone no.">PHONE NO.</label>
+            <input type="tel" id="phone no." pattern="[6-9]{1}[0-9]{9}" placeholder="91+"><br><br>
+
+            <label for="password">Password</label>
+            <input id="password" type="password"
+                placeholder="must be greater than 8 digits and must consist of Alphabets,Symbols and Numbers"><br><br>
+
+            <label for="gender">Gender:</label><br>
+
+            <label for="male">Male</label>
+            <input id="male" name="gender" type="radio"><br>
+
+            <label for="female">Female</label>
+            <input id="female" name="gender" type="radio"><br><br>
+
+            <!-- Radio me agar dono me se Kisi eak ko hi click karne ke liye "name" ki value same honi chahiye-->
+            <label for="comment">About Me</label>
+            <textarea id="comment"></textarea><br><br>
+
+            <label for="dob">D.O.B.</label>
+            <input id="dob" name="dob" type="date"><br><br>
+
+            <label for="subjects">Optional Subject</label>
+
+            <select id="subjects">
+
+                <option id="subjects">Computer Science</option>
+                <option id="subjects">French</option>
+                <option id="subjects">German</option>
+                <option id="subjects">Spanish</option>
+                <option id="subjects">Bhojpuri</option>
+                <option id="subjects">Dothraki</option>
+
+            </select><br><br>
+
+            <label for="tnc">I agree with all the terms & conditions.</label>
+            <input type="checkbox" id="tnc">
+
+            <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

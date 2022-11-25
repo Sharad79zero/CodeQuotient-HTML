@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        div.grid {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        #item-1 {
+            /*Neeche Dekho Neeche ! yeh add kiya hai maine bas*/
+            grid-column: 2 / span 3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div id="item-1">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+
+</html>

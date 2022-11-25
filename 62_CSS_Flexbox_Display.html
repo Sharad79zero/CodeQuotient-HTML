@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Web Page Title</title>
+
+    <style>
+        /* The main idea behind the flex layout is
+        to give the container the ability to alter
+        its items’ width/height (and order) to best 
+        fill the available space (mostly to accommodate
+        all kinds of display devices and screen sizes). 
+        A flex container expands items to fill available
+        free space or shrinks them to prevent overflow. 
+        There are two important components to a flexbox 
+        layout: flex containers and flex items. A flex 
+        container is an element on a page that contains 
+        flex items. All direct child elements of a flex 
+        container are flex items. This distinction is 
+        important because some of the properties you will
+        learn in this lesson apply to flex containers while
+        others apply to flex items. To designate an element
+        as a flex container,set the element’s display property
+        to flex or inline-flex. Once an item is a flex container,
+        there are several properties we can use to specify how 
+        its children behave.
+ */
+        /* display: flex; */
+
+        /* This defines a flex container; inline or block 
+        depending on the given value. It enables a flex
+        context for all its direct children.A div with the
+        declaration display: flex; will remain block level — no
+        other elements will appear on the same line as it.However,
+        it will change the behavior of its child elements.
+        Child elements will not begin on new lines. */
+
+
+        /* display: Inline-flex  */
+
+        /* If we didn’t want div elements to be block-level 
+        elements, we would use display: inline. Flexbox, 
+        however, provides the inline-flex value for the 
+        display attribute, which allows us to create flex
+        containers that are also inline elements. When we
+        change the value of the display property to inline-flex,
+        the divs will display inline with each other if the
+        page is wide enough. */
+
+        div {
+            background-color: yellow;
+            min-width: 100px;
+            min-height: 100px;
+            border: 5px solid black;
+            margin: 10px;
+        }
+
+        /* bas yeh neeche ka part add kiya hai maine*/
+        div.flex-container {
+            display: flex;
+        }
+
+        div.inline-flex-container {
+            display: inline-flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container"></div>
+
+    <div class="inline-flex-container"></div>
+    <div class="inline-flex-container"></div>
+</body>
+
+</html>

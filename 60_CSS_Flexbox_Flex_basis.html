@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        /* Another way of specifying the width of a flex item
+        is with the flex-basis property. flex-basis allows
+        us to specify the width of an item before it 
+        stretches or shrinks. */
+
+        div {
+            border: 2px solid black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            flex-grow: 0;
+            flex-basis: 100px;
+        }
+
+        .main {
+            flex-grow: 1;
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h1>Left Sidebar</h1>
+        </div>
+        <div class="main">
+            <h1>Main content here!</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <style>
+        /* The CSS DISPLAY property provides 
+        the ability to make any element 
+        an inline element. This includes
+        elements that are not inline by 
+        default such as paragraphs, divs,
+        and headings. */
+
+        /*  Display:inline;  */
+
+        /* Inline elements: They have a box that wraps
+        tightly around their content, only taking
+        up the amount of space necessary to display
+        their content and not requiring a new line
+        after each element. The height and width of
+        these elements cannot be specified in the CSS document*/
+        /*  Example:<em>, <strong>, and <a>  */
+
+        /*  Display:block;  */
+
+        /*Some elements are not displayed in the same
+        line as the content around them. These are called
+        block-level elements. These elements fill the entire
+        width of the page by default, but their width property
+        can also be set. Unless otherwise specified, they are
+        the height necessary to accommodate their content.
+        Elements that are block-level by default include all
+        levels of heading elements (<h1> through <h6>), <p>,
+        <div> and <footer>.*/
+        /* Example: <h1> to <h6>, <p> , <div>, <footer> */
+
+        /*  Display:inline-block  */
+
+        /*Inline-block display combines features of both 
+        inline and block elements. Inline-block elements 
+        can appear next to each other and we can specify 
+        their dimensions using the width and height properties. */
+        /* Example: <img> tag is the best example of default inline-block elements. */
+
+        .inline-block-container>div {
+            display: inline-block;
+            /* upar dekho upar ..yeh "Display:inline-block;" add kiya hai*/
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        span {
+            display: block;
+            /* upar dekho upar ..yeh "Display:block;" add kiya hai*/
+            background-color: yellow;
+            text-align: center;
+        }
+
+        p {
+            display: inline;
+            /* upar dekho upar ..yeh "Display:inline;" add kiya hai*/
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="inline-block-container">
+        <div style="background-color: red;"></div>
+        <div style="background-color: blue;"></div>
+        <div style="background-color: green;"></div>
+    </div>
+
+    <span>This is a block span.</span>
+
+    <p>This is an inline paragraph.</p>
+
+</body>
+
+
+</html>

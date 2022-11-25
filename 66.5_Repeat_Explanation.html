@@ -1,0 +1,7 @@
+repeat() function, the first value defines the number of repetitions; the second value defines what will be repeated.
+
+Let's work backwards from your example:
+grid-template-columns: repeat(2, 20px 50px);
+
+You've got a 20px 50px structure (two columns), and you've set that to repeat 2 times. That's a two-column structure twice, hence 4. Repeating it 3 times would be 6 columns, 4 would make 8 and so on.
+For what it's worth. These declarations are the same: grid-template-columns: repeat(2, 20px 50px); grid-template-columns: 20px 50px 20px 50px;

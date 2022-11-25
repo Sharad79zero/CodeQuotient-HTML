@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Document</title>
+
+    <style>
+        /* we used the align-items property to space flex items
+        from the top to the bottom of a flex container. align-items
+        is for aligning elements within a single row. If a flex 
+        container has multiple rows of content, we can use align-content
+        to space the rows from top to bottom.
+
+        align-content accepts six values:
+
+        1.) flex-start — all rows of elements will be positioned at 
+            the top of the parent container with no extra space between.
+
+        2.) flex-end — all rows of elements will be positioned at the
+            bottom of the parent container with no extra space between.
+
+        3.) center — all rows of elements will be positioned at the 
+            center of the parent element with no extra space between.
+
+        4.) space-between — all rows of elements will be spaced evenly
+            from the top to the bottom of the container with no space 
+            above the first or below the last.
+
+        5.) space-around — all rows of elements will be spaced evenly 
+            from the top to the bottom of the container with the same 
+            amount of space at the top and bottom and between each element.
+
+        6.) stretch — if a minimum height or no height is specified, the
+            rows of elements will stretch to fill the parent container 
+            from top to bottom (default value). */
+
+        div {
+            margin: 5px;
+            border: 2px solid black;
+        }
+
+        .container {
+            background-color: yellow;
+            display: flex;
+            height: 300px;
+            flex-wrap: wrap;
+            /* bas yeh neeche wali line add ki hai bhai ne*/
+            align-content: center;
+        }
+
+        .container div {
+            height: 50px;
+            width: 100px;
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+</body>
+
+</html>

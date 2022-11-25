@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+    <style>
+        div {
+            border: 2px solid black;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        #main>div {
+            width: 50px;
+            min-height: 50px;
+            margin: 5px;
+        }
+
+        div#main {
+            display: flex;
+            flex-wrap: wrap;
+
+            /* flex-grow:1;
+            flex-shrink:1;
+            flex-basis:auto; */
+
+            flex: 1 1 auto;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Left Sidebar</h1>
+        </div>
+        <div id="main">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
+</body>
+
+</html>

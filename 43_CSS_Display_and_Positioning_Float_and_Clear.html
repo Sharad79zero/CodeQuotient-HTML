@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <style>
+        /*  If you’re simply interested in moving an element
+    as far left or as far right as possible on the page, 
+    you can use the float property.
+
+    The float property can be set to one of two values:
+
+    left - this value will move, or float, elements as far left as possible.
+    right - this value will move elements as far right as possible. */
+
+        /* The clear property specifies how elements
+    should behave when they bump into each other
+    on the page. 
+    
+    The clear property can be set to one of four values:
+
+    left — The left side of the element will not touch any other element within the same containing element.
+    right — The right side of the element will not touch any other element within the same containing element.
+    both — Neither side of the element will touch any other element within the same containing element.
+    none — The element can touch either side. */
+
+        div {
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+        }
+
+        p {
+            background-color: green;
+        }
+
+        .left {
+            float: left;
+            /* upar dekho upar "float:left" add kiya h mane" */
+            background-color: yellow;
+        }
+
+        .right {
+            float: right;
+            /* upar dekho upar "float:right" add kiya h mane" */
+            background-color: red;
+        }
+
+        p.clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left"></div>
+    <div class="right"></div>
+
+    <p class="clear">This is a paragraph.</p>
+</body>
+
+</html>
